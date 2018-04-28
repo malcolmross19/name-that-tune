@@ -1,0 +1,26 @@
+{
+  "name": "name-that-tune",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/src/index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malcolmross19/name-that-tune.git"
+  },
+  "author": "Malcolm Ross",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malcolmross19/name-that-tune/issues"
+  },
+  "homepage": "https://malcolmross19.github.io/name-that-tune/"
+}
