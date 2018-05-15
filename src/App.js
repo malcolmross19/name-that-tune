@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import SpotifyWebApi from 'spotify-web-api-js';
 import ReactCountdownClock from 'react-countdown-clock';
@@ -29,6 +29,8 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+
 
   getNowPlaying(){
   spotifyApi.getMyCurrentPlaybackState()
@@ -129,7 +131,7 @@ class App extends Component {
 
             {this.state.loggedIn && !this.state.songInfoHidden &&
               <div>
-                <img src={this.state.nowPlaying.albumArt} style={{ height: 650 }}/>
+                <img src={this.state.nowPlaying.albumArt} alt="album" style={{ height: 650 }}/>
               </div>}
 
             {this.state.loggedIn && !this.state.clockHidden &&
